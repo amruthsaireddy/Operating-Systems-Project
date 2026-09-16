@@ -1,0 +1,37 @@
+AZFS Multi-Seed Simulation Summary
+=================================
+
+Seeds: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+Values are reported as mean ± standard deviation.
+Settling success rate is the fraction of runs that satisfied the configured settling criterion.
+
+Scheduler                Signed Error             Abs Error                     Overshoot                      Variance    Settle Success
+------------------------------------------------------------------------------------------------------------------------------------------------------
+FCFS            -19113.8515 ± 37.3336  19113.8515 ± 37.3336          19608.2142 ± 37.4929       333187.3173 ± 3289.0539              0.0%
+RoundRobin      -21063.4663 ± 33.6002  21063.4663 ± 33.6002          21607.3928 ± 33.7436       403185.0998 ± 3256.3627              0.0%
+PID_Tustin            0.0094 ± 0.0264       1.0538 ± 0.0534               8.3272 ± 0.4564               1.6299 ± 0.1818            100.0%
+AZFS                  0.0054 ± 0.0180       1.3979 ± 0.0818               8.1160 ± 0.9514               2.9446 ± 0.2895            100.0%
+
+Settling time details
+---------------------
+FCFS:
+  Mean raw settling time: -1.0000
+  Settled-run mean: nan
+  Success rate: 0.0%
+
+RoundRobin:
+  Mean raw settling time: -1.0000
+  Settled-run mean: nan
+  Success rate: 0.0%
+
+PID_Tustin:
+  Mean raw settling time: 13.5000
+  Settled-run mean: 13.5
+  Success rate: 100.0%
+
+AZFS:
+  Mean raw settling time: 227.8000
+  Settled-run mean: 227.8
+  Success rate: 100.0%
+
